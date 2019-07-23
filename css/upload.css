@@ -1,0 +1,113 @@
+main.upload .nav-tabs-wrapper {
+  top: 0 !important;
+  z-index: 50;
+  background: white;
+  padding-bottom: 10px;
+}
+
+main.upload .nav-tabs-wrapper .nav-tabs {
+  border-bottom: 2px solid rgba(33, 20, 220, 0.7);
+}
+
+main.upload .nav-tabs-wrapper .nav-tabs .nav-item {
+  padding: 0;
+}
+
+main.upload .nav-tabs-wrapper .nav-tabs .nav-link {
+  -webkit-transform: scale(0.9);
+          transform: scale(0.9);
+  color: rgba(58, 67, 82, 0.4);
+  border: 1px solid rgba(58, 67, 82, 0.2);
+  border-bottom: none;
+  margin-bottom: -1px !important;
+}
+
+main.upload .nav-tabs-wrapper .nav-tabs .nav-link:hover {
+  -webkit-transform: scale(1);
+          transform: scale(1);
+  opacity: 1;
+  color: rgba(58, 67, 82, 0.8);
+  border-width: 2px;
+  border-bottom-color: transparent;
+}
+
+main.upload .nav-tabs-wrapper .nav-tabs .nav-link.active {
+  margin-bottom: -1px !important;
+  border-width: 2px;
+  font-weight: 500;
+  color: #2114dc;
+  border-color: rgba(33, 20, 220, 0.7);
+  border-bottom-color: white;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+main.upload .tab-content > .active {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+main.upload fieldset h5 {
+  background: rgba(33, 20, 220, 0.2);
+  border-radius: 3px;
+}
+
+main.upload .img-upload-thumbnail-wrapper {
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+main.upload .img-upload-thumbnail-wrapper .img-thumbnail {
+  width: 100%;
+  border-width: 5px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+main.upload .img-upload-thumbnail-wrapper .remove-img-btn {
+  position: absolute;
+  font-size: 12px;
+  font-weight: bolder;
+  height: 26px;
+  width: 26px;
+  top: 4px;
+  right: 4px;
+  z-index: 2;
+  color: white;
+  border: none;
+  background: darkorange;
+  -webkit-transition: 0.25s;
+  transition: 0.25s;
+}
+
+main.upload .img-upload-thumbnail-wrapper .remove-img-btn:hover {
+  color: darkorange;
+  border: 1px solid darkorange;
+  background: white;
+}
+
+.modal .modal-header {
+  background: white;
+  position: relative;
+  z-index: 3;
+}
+
+.modal .preview-img {
+  max-width: 85%;
+  border: 10px solid red;
+}
+
+.modal a[class^=carousel-control-] {
+  background: rgba(58, 67, 82, 0.3);
+  width: 7.5%;
+}
+
+.modal .carousel-control-next,
+.modal .carousel-control-prev {
+  bottom: 10px;
+  top: 10px;
+}
+/*# sourceMappingURL=upload.css.map */

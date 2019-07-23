@@ -1,0 +1,132 @@
+@import 'theme_colors.scss';
+
+
+main.upload
+{
+  .nav-tabs-wrapper
+  {
+    top: 0 !important;
+    z-index: 50;
+    background: white;
+    padding-bottom: 10px;
+
+    .nav-tabs
+    {
+      border-bottom: 2px solid $theme-color-light-7;
+      
+      .nav-item
+      { padding: 0; }
+  
+      .nav-link
+      {
+        transform: scale(0.9);
+        color: $theme-text-color-light-4;
+        border: 1px solid $theme-text-color-light-2;
+        border-bottom: none;
+        margin-bottom: -1px !important;
+  
+        &:hover
+        {
+          transform: scale(1.0);
+          opacity: 1;
+          color: $theme-text-color-light-8;
+          border-width: 2px;
+          border-bottom-color: transparent;
+        }
+  
+        &.active
+        { 
+          margin-bottom: -1px !important;
+          border-width: 2px;
+          font-weight: 500;
+          color: $theme-color-basic;
+          border-color: $theme-color-light-7;
+          border-bottom-color: white;
+          transform: scale(1.0);
+        }
+      }
+    }
+  }
+
+  .tab-content > .active
+  {
+    display: flex;
+    justify-content: space-around;
+  }
+
+  fieldset
+  {
+    h5
+    { 
+      background: $theme-color-light-2;
+      border-radius: 3px;
+    }
+  }
+
+  .img-upload-thumbnail-wrapper
+  {
+    transition: 0.3s;
+
+    .img-thumbnail
+    { 
+      width: 100%; 
+      border-width: 5px; 
+      border-radius: 5px;
+      cursor: pointer;
+    }
+    
+    .remove-img-btn
+    {
+      position: absolute;
+      font-size: 12px;
+      font-weight: bolder;
+      height: 26px;
+      width: 26px;
+      top: 4px;
+      right: 4px;
+      z-index: 2;
+      color: white;
+      border: none;
+      background: darkorange;
+      transition: 0.25s;
+
+      &:hover
+      {
+        color: darkorange;
+        border: 1px solid darkorange;
+        background: white;
+      }
+    }
+  }
+}
+
+
+.modal
+{
+  .modal-header
+  {
+    background: white;
+    position: relative;
+    z-index: 3;
+  }
+
+  .preview-img
+  {
+    max-width: 85%;
+  
+    border: 10px solid red;
+  }
+
+  a[class^=carousel-control-]
+  {
+    background: $theme-text-color-light-3;
+    width: 7.5%;
+  }
+
+  .carousel-control-next,
+  .carousel-control-prev
+  { 
+    bottom: 10px;
+    top: 10px;
+  }
+}

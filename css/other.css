@@ -1,0 +1,65 @@
+    
+    /* index landing image section - START */
+
+    .cur-page-top-bg-image
+    {
+      height: 100vh;
+      max-height: 1000px;
+      background-image: url('../images/main-bg.jpg');
+    }
+
+    .desc-content-wrapper
+    { padding: 0 !important; }
+
+    .desc-image
+    {
+      width: 315px;
+      height: auto;
+      margin-top: 100px;
+      opacity: 0.5;
+    }
+
+    /* index landing image section - END */
+ 
+
+    
+    /* image card section - START */
+
+    .card
+    {
+      min-height: 370px;
+      margin: 20px 0;
+      padding: 0 10px;
+      color: rgb(230, 230,  230);
+      border: none;
+      background: none;
+      text-shadow: 1px 1px 0px #111;
+    }
+
+    .card-body
+    {
+      border-radius: 5px;
+      background-image: url('../images/black-abstract-wallpaper-hd.jpg');
+      background-size: cover;
+      background-repeat: no-repeat;
+    }
+
+    .card-button
+    {
+      background: transparent;
+      border: 1px solid rgb(230, 230,  230);
+      color: rgb(230, 230,  230) !important;
+      box-shadow: 0 0 15px black;
+    }
+
+    .card-button:hover
+    {
+      background: rgb(230, 230,  230);
+      color: #232629 !important;
+    }
+
+    /* image card section - END */
+
+
+    
+

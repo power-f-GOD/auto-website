@@ -1,0 +1,70 @@
+.cur-page-top-bg-image {
+  height: 400px;
+  background: #e6e6e6;
+  background-image: url("../images/main-bg.jpg");
+  background-size: 50vh 50vh;
+  color: #5a6372;
+}
+
+.text-section-desc-img {
+  width: 300px;
+}
+
+.cars-list {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: block;
+  width: auto;
+  /* padding: 20px; */
+}
+
+.card-wrapper {
+  padding: 20px;
+  height: auto;
+}
+
+.custom-card {
+  background: #f4f4f4;
+  border-color: #f4f4f4;
+  width: 100%;
+  padding: 5px;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.custom-card:hover {
+  background: #e0e0e0;
+}
+
+.card-body * {
+  display: block;
+  margin-bottom: 4px;
+}
+
+.card-body span,
+.card-body a {
+  font-size: 85%;
+}
+
+/* .car-image
+    {
+      margin: 10px;
+      width: 100%;
+    } */
+.browse-cars-btn {
+  visibility: hidden;
+  opacity: 0;
+  margin: 0;
+  margin-top: 20px;
+  width: 100%;
+  padding: 12px;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.card-wrapper:hover .browse-cars-btn {
+  visibility: visible;
+  opacity: 1;
+}
+/*# sourceMappingURL=index.css.map */

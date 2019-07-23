@@ -1,0 +1,396 @@
+html,
+body {
+  width: 100%;
+  color: #3a4352;
+  font-size: 15px;
+  background: white;
+  font-family: 'Google Sans', 'apple-system', 'BlinkMacSystemFont', "Segoe UI", 'Roboto', "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  /* background: url('../images/main-bg.jpg');  */
+  background-size: 50vh 50vh;
+}
+
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  outline: none !important;
+}
+
+main {
+  height: auto;
+  width: 100%;
+  min-height: calc(100vh - 135px);
+}
+
+main .sub-main {
+  height: auto;
+  width: 100%;
+  min-height: calc(100vh - 251px);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+main .cur-page-top-bg-image {
+  min-width: auto;
+  color: #e6e6e6;
+  height: 400px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  overflow: hidden;
+  margin-bottom: 25px;
+}
+
+main .cur-page-top-bg-image .cur-page-top-bg-image-content {
+  height: 100%;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 600;
+}
+
+textarea {
+  min-height: 125px;
+  max-height: 250px;
+}
+
+a {
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  color: #2114dc;
+}
+
+a:hover {
+  color: #2114dc;
+}
+
+a .btn-primary {
+  color: white !important;
+}
+
+fieldset {
+  border: 1px solid rgba(58, 67, 82, 0.2);
+  margin: 0;
+  padding: 20px;
+  font-size: 100%;
+}
+
+fieldset legend {
+  padding: 0;
+  display: inline-block;
+  width: auto;
+  margin-bottom: 0px;
+  font-size: 140%;
+  font-weight: 600;
+}
+
+hr {
+  border: 1px solid #dddddd;
+}
+
+form .form-group {
+  margin-bottom: 0;
+  margin-top: 10px;
+}
+
+form .form-group input,
+form .form-group textarea {
+  border-radius: 2px;
+  padding: 7px;
+  border-color: rgba(58, 67, 82, 0.2);
+}
+
+form .form-group input::-webkit-input-placeholder,
+form .form-group textarea::-webkit-input-placeholder {
+  color: rgba(58, 67, 82, 0.4);
+}
+
+form label {
+  margin-bottom: 3px;
+}
+
+form label.custom-file-label {
+  color: rgba(58, 67, 82, 0.3);
+  border-radius: 2px;
+  border-color: rgba(58, 67, 82, 0.2);
+}
+
+form label.custom-file-label::after {
+  color: rgba(58, 67, 82, 0.8);
+  border-radius: 0;
+  border: none;
+}
+
+.button {
+  text-decoration: none !important;
+  border-radius: 50px;
+  padding: 8px 20px !important;
+  margin: 0 !important;
+  width: auto;
+  display: inline-block;
+  border: 1px solid transparent;
+  text-shadow: none !important;
+  font-size: inherit;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.button:hover {
+  background: inherit;
+  border: 1px solid #e6e6e6;
+  color: #e6e6e6 !important;
+}
+
+.btn-primary {
+  background: #2114dc !important;
+  border-color: #2114dc !important;
+}
+
+.btn-primary:hover {
+  background: rgba(33, 20, 220, 0.9) !important;
+  border-color: rgba(33, 20, 220, 0.9) !important;
+}
+
+.dark-bg-overlay {
+  z-index: 10;
+  background: rgba(0, 0, 0, 0.6);
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.custom-show {
+  visibility: visible !important;
+  opacity: 1 !important;
+}
+
+.custom-hide {
+  visibility: hidden !important;
+  opacity: 0 !important;
+}
+
+.fade {
+  -webkit-transition: 0.1s !important;
+  transition: 0.1s !important;
+}
+
+.css-debug-border {
+  border: 1px solid grey;
+}
+
+/* for paddings - STAT */
+.no-pad {
+  padding: 0 !important;
+}
+
+.pad-10px {
+  padding: 10px !important;
+}
+
+.pad-15px {
+  padding: 15px !important;
+}
+
+.pad-30px {
+  padding: 30px !important;
+}
+
+.pad-60px {
+  padding: 60px !important;
+}
+
+.pad-l-10px {
+  padding-left: 10px !important;
+}
+
+.pad-r-10px {
+  padding-right: 10px !important;
+}
+
+.pad-l-15px {
+  padding-left: 15px !important;
+}
+
+.pad-r-15px {
+  padding-right: 15px !important;
+}
+
+.pad-l-30px {
+  padding-left: 30px !important;
+}
+
+.pad-r-30px {
+  padding-right: 30px !important;
+}
+
+.pad-t-10px {
+  padding-top: 10px !important;
+}
+
+.pad-b-10px {
+  padding-bottom: 10px !important;
+}
+
+.pad-t-15px {
+  padding-top: 15px !important;
+}
+
+.pad-b-15px {
+  padding-bottom: 15px !important;
+}
+
+.pad-t-30px {
+  padding-top: 30px !important;
+}
+
+.pad-b-30px {
+  padding-bottom: 30px !important;
+}
+
+.pad-x-10px {
+  padding-left: 10px !important;
+  padding-right: 10px !important;
+}
+
+.pad-x-15px {
+  padding-left: 15px !important;
+  padding-right: 15px !important;
+}
+
+.pad-x-30px {
+  padding-left: 30px !important;
+  padding-right: 30px !important;
+}
+
+.pad-y-10px {
+  padding-top: 10px !important;
+  padding-bottom: 10px !important;
+}
+
+.pad-y-15px {
+  padding-top: 15px !important;
+  padding-bottom: 15px !important;
+}
+
+.pad-y-30px {
+  padding-top: 30px !important;
+  padding-bottom: 30px !important;
+}
+
+.pad-y-60px {
+  padding-top: 60px !important;
+  padding-bottom: 60px !important;
+}
+
+/* for paddings - END */
+/* for margins - START */
+.no-marg {
+  margin: 0 !important;
+}
+
+.marg-10px {
+  margin: 10px !important;
+}
+
+.marg-15px {
+  margin: 15px !important;
+}
+
+.marg-30px {
+  margin: 30px !important;
+}
+
+.marg-60px {
+  margin: 60px !important;
+}
+
+.marg-l-10px {
+  margin-left: 10px !important;
+}
+
+.marg-r-10px {
+  margin-right: 10px !important;
+}
+
+.marg-l-15px {
+  margin-left: 15px !important;
+}
+
+.marg-r-15px {
+  margin-right: 15px !important;
+}
+
+.marg-l-30px {
+  margin-left: 30px !important;
+}
+
+.marg-r-30px {
+  margin-right: 30px !important;
+}
+
+.marg-t-10px {
+  margin-top: 10px !important;
+}
+
+.marg-b-10px {
+  margin-bottom: 10px !important;
+}
+
+.marg-t-15px {
+  margin-top: 15px !important;
+}
+
+.marg-b-15px {
+  margin-bottom: 15px !important;
+}
+
+.marg-t-30px {
+  margin-top: 30px !important;
+}
+
+.marg-b-30px {
+  margin-bottom: 30px !important;
+}
+
+.marg-x-10px {
+  margin-left: 10px !important;
+  margin-right: 10px !important;
+}
+
+.marg-x-15px {
+  margin-left: 15px !important;
+  margin-right: 15px !important;
+}
+
+.marg-x-30px {
+  margin-left: 30px !important;
+  margin-right: 30px !important;
+}
+
+.marg-y-10px {
+  margin-top: 10px !important;
+  margin-bottom: 10px !important;
+}
+
+.marg-y-15px {
+  margin-top: 15px !important;
+  margin-bottom: 15px !important;
+}
+
+.marg-y-30px {
+  margin-top: 30px !important;
+  margin-bottom: 30px !important;
+}
+
+.marg-y-60px {
+  margin-top: 60px !important;
+  margin-bottom: 60px !important;
+}
+
+/* for margins - END  */
+/*# sourceMappingURL=main.css.map */
