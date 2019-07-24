@@ -95,14 +95,26 @@ main.upload .img-upload-thumbnail-wrapper .remove-img-btn:hover {
   z-index: 3;
 }
 
+.modal .img-count {
+  position: absolute;
+  color: rgba(58, 67, 82, 0.5);
+}
+
 .modal .preview-img {
-  max-width: 85%;
+  max-width: 80%;
   border: 10px solid red;
 }
 
 .modal a[class^=carousel-control-] {
-  background: rgba(58, 67, 82, 0.3);
-  width: 7.5%;
+  background: rgba(58, 67, 82, 0.1);
+  width: 8%;
+}
+
+.modal a[class^=carousel-control-] span[class^=carousel-control-] {
+  background-color: rgba(58, 67, 82, 0.2);
+  border-radius: 50%;
+  height: 25px;
+  width: 25px;
 }
 
 .modal .carousel-control-next,

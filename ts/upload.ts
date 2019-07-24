@@ -1,44 +1,50 @@
+interface Upload
+{
+  imageFiles: File[],
+  imageNames: string[]
+}
+
 
 function loadUploadPageScript()
 {
-  let newUploads = {
-        imageFiles: [],
-        imageNames: []
-      },
-      oldUploads = {
-        imageFiles: [],
-        imageNames: []
-      };
+  const newUploads: Upload = {
+          imageFiles: [],
+          imageNames: []
+        },
+        oldUploads: Upload = {
+          imageFiles: [],
+          imageNames: []
+        };
 
 
 
-  QAll('.carpic').forEach(fileInput => fileInput.addEventListener('change', addCarImages));
+  QAll('.carpic').forEach((fileInput: any) => fileInput.addEventListener('change', appendImage));
   
-  function addCarImages()
+  function appendImage(this: any) 
   {
     if (!this.files[0])
       return;
 
-    let fileInput = this,
-        fileInputFormParent = this.parentNode.parentNode.parentNode,
-        imageNamesJoined = '',
-        uploadTypeIsNew = /new/.test(fileInputFormParent.className);
+    const fileInput = this,
+          fileInputFormParent = fileInput.parentNode.parentNode.parentNode,
+          typeofUploadIsNew = /new/.test(fileInputFormParent.className);
     
-    let { imageFiles, imageNames } = uploadTypeIsNew ? newUploads : oldUploads;
+    let { imageFiles, imageNames }: any = typeofUploadIsNew ? newUploads : oldUploads,
+        imageNamesJoined = '';
 
-    for (let file of this.files) 
+    for (let file of fileInput.files) 
     {
-      if (!imageFiles.find(imageFile => imageFile.name == file.name))
+      if (!imageFiles.find((imageFile: File) => imageFile.name == file.name))
         imageFiles.push(file);
     };
  
-    imageNames = imageFiles.map(image =>
+    imageNames = imageFiles.map((imageFile: File) =>
     {
-      const imageURL = URL.createObjectURL(image),
-            imageID = image.name.replace(/(.*)\..*/, '$1'),
+      const imageURL = URL.createObjectURL(imageFile),
+            imageID = imageFile.name.replace(/(.*)\..*/, '$1'),
             thumbnail = `
               <div class='col-4 no-pad pad-r-10px img-upload-thumbnail-wrapper ${imageID}'>
-                <img src='${imageURL}' title='${image.name}' class='marg-t-10px d-inline-block img-fluid img-thumbnail' id=${imageID} alt='${image.name}' data-toggle="modal" data-target=".img-preview" />
+                <img src='${imageURL}' title='${imageFile.name}' class='marg-t-10px d-inline-block img-fluid img-thumbnail' id=${imageID} alt='${imageFile.name}' data-toggle="modal" data-target=".img-preview" />
                 <button type='button' class='remove-img-btn rounded-circle ${imageID}-btn'>✕</button>
               </div>`;
 
@@ -46,22 +52,24 @@ function loadUploadPageScript()
         fileInputFormParent.querySelector('.images-upload-container').insertAdjacentHTML('beforeend', thumbnail);
       
       Q(`button.${imageID}-btn`).onclick = deleteThumbnail;
-      Q(`img#${imageID}`).onclick = function(e) {
-        previewImage(e);
-        activateImageSlide(uploadTypeIsNew);
+      Q(`img#${imageID}`).onclick = (e: Event) =>
+      {
+        const curPos = imageNames.indexOf(imageNames.find((name: string) => name == imageFile.name));
+        previewImage(e, `(${curPos + 1} of ${imageFiles.length})`);
+        activateImageSlide(typeofUploadIsNew, curPos);
       };
 
-      return image.name;
+      return imageFile.name;
     });
     
     updateImageLabelTextContent(imageFiles[0]);
 
 
     
-    function deleteThumbnail() 
+    function deleteThumbnail(this: any) 
     {
       const thumbID = this.previousElementSibling.title,
-            thumbToRemove = imageNames.find(name => name == thumbID),
+            thumbToRemove = imageNames.find((name: string) => name == thumbID),
             indexOfThumbToRemove = imageNames.indexOf(thumbToRemove);
 
       imageFiles.splice(indexOfThumbToRemove, 1);
@@ -74,13 +82,13 @@ function loadUploadPageScript()
     };
 
 
-    function updateImageLabelTextContent(labelHasImage)
+    function updateImageLabelTextContent(labelHasImage: boolean)
     {
       if (labelHasImage)
       {
-        const boundOfText = Math.ceil((fileInput.nextElementSibling.offsetWidth - 70) / 7);
+        const boundOfText = Math.ceil((fileInput.nextElementSibling.offsetWidth - 70) / 7.5);
+        
         imageNamesJoined = imageNames.join('; ');
-
         fileInput.nextElementSibling.textContent = imageNamesJoined.length > boundOfText ?
           `${imageNamesJoined.substr(0, boundOfText)}...` : imageNamesJoined;
         fileInput.title = imageNames.join('\n');
@@ -100,21 +108,22 @@ function loadUploadPageScript()
 
 
 
-  function activateImageSlide(uploadTypeIsNew)
+  function activateImageSlide(typeofUploadIsNew: boolean, curPos: number)
   {
-    let { imageFiles } = uploadTypeIsNew ? newUploads : oldUploads,
+    let { imageFiles } = typeofUploadIsNew ? newUploads : oldUploads,
         lim = imageFiles.length - 1,
-        curPos = 0,
-        image = { target: {} };
-    
+        image = { target: { title: '', src: '' } };
+
+
     Q('[data-slide=next]').onclick = () =>
     {
       curPos++;
       curPos = curPos > lim ? 0 : curPos;
       image.target.title = imageFiles[curPos].name;
       image.target.src = Q(`img#${imageFiles[curPos].name.replace(/(.*)\..*/, '$1')}`).src;
-      previewImage(image);
+      previewImage(image, `(${curPos + 1} of ${lim + 1})`);
     }
+
 
     Q('[data-slide=prev]').onclick = () =>
     {
@@ -122,37 +131,38 @@ function loadUploadPageScript()
       curPos = curPos < 0 ? lim : curPos;
       image.target.title = imageFiles[curPos].name;
       image.target.src = Q(`img#${imageFiles[curPos].name.replace(/(.*)\..*/, '$1')}`).src;
-      previewImage(image);
+      previewImage(image, `(${curPos + 1} of ${lim + 1})`);
     }
   }
 
 
 
-  function previewImage({ target })
+  function previewImage({ target }: any, countText: string)
   {
     const { title, src } = target;
 
     Q('.preview-img').src = src;
     Q('.preview-img').title = title;
     Q('.modal-title').textContent = title;
+    Q('.img-count').textContent = countText;
   }
 
 
 
-  function flagIfInvalid(element, isInvalid, msg = 'Invalid input.')
+  function flagIfInvalid(element: any, isInvalid: boolean, msg = 'Invalid input.')
   {
-    const errMsgHTML = `<div class='invalid-feedback d-block'>${msg}</div>`,
+    const errMsg = `<div class='invalid-feedback d-block'>${msg}</div>`,
           errNodeParent = element.parentNode.parentNode,
-          errNode = errNodeParent.querySelector('.invalid-feedback');
+          foundErrNode = errNodeParent.querySelector('.invalid-feedback');
     
-    if (isInvalid && !errNode)
+    if (isInvalid && !foundErrNode)
     {
-      element.parentNode.insertAdjacentHTML('afterend', errMsgHTML);
+      element.parentNode.insertAdjacentHTML('afterend', errMsg);
       element.classList.add('is-invalid');
     }
-    else if (errNode && !isInvalid)
+    else if (foundErrNode && !isInvalid)
     {
-      errNodeParent.removeChild(errNode);
+      errNodeParent.removeChild(foundErrNode);
       element.classList.remove('is-invalid');
     }
   }

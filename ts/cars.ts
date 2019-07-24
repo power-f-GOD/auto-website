@@ -1,7 +1,8 @@
 
 function loadCarsPageScript()
 {
-  const cars = {
+  const cars = 
+  {
     families: [
       {
         name: 'Kia Wagon',
@@ -121,7 +122,9 @@ function loadCarsPageScript()
   let i = 0;
   for (let family of cars.families)
   {
-    Q('.cars-list-wrapper').insertAdjacentHTML('beforeend', 
+    let carsList = Q('.cars-list-wrapper')!;
+
+    carsList.insertAdjacentHTML('beforeend', 
     ` <div class="pad-y-15px"></div>
       <h3 class="flex-start">
         ${family.name}

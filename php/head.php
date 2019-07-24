@@ -17,12 +17,12 @@
   <link rel='stylesheet' type='text/css' href='css/responsive.css' />
   <!-- <script src='https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js'></script> -->
   <!-- <script src='https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js'></script> -->
-  <script type='text/javascript' src='js/jquery.js' defer></script>
+  <script type='text/javascript' src='bootstrap/jquery.js' defer></script>
   <script type='text/javascript' src='bootstrap/popper.min.js' defer></script>
   <script type='text/javascript' src='bootstrap/bootstrap.min.js' defer></script>
-  <script type='text/javascript' src='js/utilities.js' defer></script>
-  <script type='text/javascript' src='js/main.js' defer></script>
-  <script type='text/javascript' src='js/index.js' defer></script>
-  <script type='text/javascript' src='js/cars.js' defer></script>
-  <script type='text/javascript' src='js/upload.js' defer></script>
+  <script type='text/javascript' src='built/js/utilities.js' defer></script>
+  <script type='text/javascript' src='built/js/main.js' defer></script>
+  <script type='text/javascript' src='built/js/index.js' defer></script>
+  <script type='text/javascript' src='built/js/cars.js' defer></script>
+  <script type='text/javascript' src='built/js/upload.js' defer></script>
 </head>

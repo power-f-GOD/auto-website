@@ -1,5 +1,0 @@
-
-this.addEventListener('DOMContentLoaded', function()
-{
-  
-});

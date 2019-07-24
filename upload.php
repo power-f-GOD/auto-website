@@ -141,8 +141,9 @@
     <div class="modal fade img-preview no-pad" tabindex="-1" role="dialog" aria-labelledby="img-preview" aria-hidden="false">
       <div class="modal-dialog modal-xl modal-dialog-scrollable modal-dialog-centered">
         <div class="modal-content border-0">
-          <div class="modal-header border-0 d-flex justify-content-between">
+          <div class="modal-header border-0 d-flex justify-content-around">
             <h6 class="modal-title h6"></h6>
+            <h6 class="img-count h6"></h6>
             <button type="button" class="close" data-dismiss="modal" aria-label="Close">
               <span aria-hidden="true">×</span>
             </button>

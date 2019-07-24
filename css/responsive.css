@@ -65,7 +65,7 @@
     background: transparent;
   }
   .useCustomScrollBar::-webkit-scrollbar-thumb {
-    background: rgba(58, 67, 82, 0.6);
+    background: rgba(58, 67, 82, 0.2);
     border-radius: 5px;
   }
 }

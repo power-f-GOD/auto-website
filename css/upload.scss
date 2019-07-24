@@ -110,17 +110,27 @@ main.upload
     z-index: 3;
   }
 
+  .img-count
+  { position: absolute; color: $theme-text-color-light-5; }
+
   .preview-img
   {
-    max-width: 85%;
-  
+    max-width: 80%;
     border: 10px solid red;
   }
 
   a[class^=carousel-control-]
   {
-    background: $theme-text-color-light-3;
-    width: 7.5%;
+    background: $theme-text-color-light-1;
+    width: 8%;
+
+    span[class^=carousel-control-]
+    {
+      background-color: $theme-text-color-light-2;
+      border-radius: 50%;
+      height: 25px;
+      width: 25px;
+    }
   }
 
   .carousel-control-next,
