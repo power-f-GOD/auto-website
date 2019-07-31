@@ -40,8 +40,7 @@ main
   {
     min-width: auto;
     color: rgb(230, 230,  230);
-    height: 400px;
-    //text-shadow: 1px 1px 1px #111;
+    height: 270px;
     background-size: cover;
     background-repeat: no-repeat;
     overflow: hidden;
@@ -71,6 +70,9 @@ a
 
   .btn-primary
   { color: white !important; }
+
+  &[class^=carousel-control-]
+  { z-index: 11; }
 }
 
 fieldset

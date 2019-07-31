@@ -1,0 +1,150 @@
+@import 'theme_colors.scss';
+
+body.index
+{
+  .nav-wrapper.transparent
+  {
+    background: transparent;
+    box-shadow: none;
+
+    .navbar
+    {
+      .navbar-brand
+      {
+        color: #ccc;
+
+        &:hover
+        { color: white; }
+      }
+
+      .nav-link
+      {
+        font-size: 14px; 
+        min-width: auto;
+        color: #999;
+        border-bottom: 2px solid transparent;
+        /* text-shadow: 1px 1px 0px #111; */
+        transition: 0.3s;
+  
+        &:hover
+        {
+          border-bottom-color: white;
+          color: white;
+        }
+      }
+  
+      .signup-link
+      { 
+        background: $theme-color-basic;
+        color: white;
+        width: 100% !important; 
+        border: 1px solid transparent;
+        
+        &:hover
+        {
+          border-color: white !important;
+          background: transparent !important;
+          color: white !important;
+          box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+        }
+      }
+    }
+  }
+
+  .carousel-item
+  {
+    .carousel-img
+    {
+      height: 100vh;
+      max-height: 450px;
+      background-image: url('./images/cars/stinger.jpg');
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center;
+    }
+  
+    .carousel-caption
+    {
+      right: 0;
+      bottom: 0;
+      left: 0;
+      top: 0;
+      height: 100%;
+      width: 100%;
+      transition: color 1s;
+      color: transparent;
+      background: rgba(0, 0, 0, 0.75);
+    }
+  
+    &.active .carousel-caption
+    { color: #ddd; }
+  }
+
+  .cur-page-top-bg-image
+  {
+    background: rgb(230, 230,  230);
+    background-image: url('../images/main-bg.jpg'); 
+    background-size: 50vh 50vh;
+    color: $theme-text-color-basic;
+  }
+
+  .text-section-desc-img
+  { width: 300px; }
+
+  .cars-list
+  {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: block;
+    width: auto;
+    /* padding: 20px; */
+
+    .card-wrapper
+    {
+      padding: 20px;
+      height: auto;
+
+      .custom-card
+      {
+        background: #f4f4f4;
+        border-color: #f4f4f4;
+        width: 100%;
+        padding: 5px;
+        transition: 0.3s;
+
+        &:hover
+        { background: #e0e0e0; }
+
+        .card-body
+        {
+          * {
+            display: block;
+            margin-bottom: 4px;
+          }
+          
+          span, a
+          { font-size: 85%; }
+        }
+      }
+
+      .browse-cars-btn
+      {
+        visibility: hidden;
+        opacity: 0;
+        margin: 0;
+        margin-top: 20px;
+        width: 100%;
+        padding: 12px;
+        transition: 0.3s;
+      }
+
+      &:hover .browse-cars-btn
+      {
+        visibility: visible;
+        opacity: 1;
+      }
+    }
+  }
+}
+

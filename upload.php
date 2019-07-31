@@ -4,7 +4,7 @@
     require 'php/head.php';
   ?>
 
-  <body>
+  <body class='upload'>
     <?php 
       require 'php/header.php';
     ?>
@@ -66,7 +66,7 @@
                   <div class='col-12 col-md-6 col-lg-5 pad-x-10px marg-y-30px'>
                     <fieldset>
                       <legend>$upload_type_text Cars Upload</legend>
-                      <form class='$upload_type'>";
+                      <form class='$upload_type' method='POST'>";
 
                   foreach ($input_info_sections as $section_name => $section)
                   {
@@ -125,9 +125,6 @@
       </div>
 
 
-
-
-
       <div class="pad-y-30px"></div>
     </main>
 
@@ -152,12 +149,10 @@
             <img src='' title='' class='d-inline-block img-fluid img-thumbnail border-0 preview-img' alt='' />
           </div>
           <a class="carousel-control-prev" href="javascript:void(0)" role="button" data-slide="prev">
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="sr-only">Previous</span>
+            <span class='carousel-control-icon'>❮</span>
           </a>
           <a class="carousel-control-next" href="javascript:void(0)" role="button" data-slide="next">
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="sr-only">Next</span>
+            <span class='carousel-control-icon'>❯</span>
           </a>
         </div>
       </div>

@@ -1,6 +1,6 @@
 @import 'theme_colors.scss';
 
-main.cars
+body.cars
 {
   .cur-page-top-bg-image
   {
@@ -58,6 +58,7 @@ main.cars
         margin-top: 20px;
         width: 100%;
         padding: 12px;
+        transform: scale(0.8);
         transition: 0.3s;
       }
 
@@ -65,6 +66,7 @@ main.cars
       {
         visibility: visible;
         opacity: 1;
+        transform: scale(1);
       }
     }
   }

@@ -1,19 +1,19 @@
-main.upload .nav-tabs-wrapper {
+body.upload .nav-tabs-wrapper {
   top: 0 !important;
   z-index: 50;
   background: white;
   padding-bottom: 10px;
 }
 
-main.upload .nav-tabs-wrapper .nav-tabs {
+body.upload .nav-tabs-wrapper .nav-tabs {
   border-bottom: 2px solid rgba(33, 20, 220, 0.7);
 }
 
-main.upload .nav-tabs-wrapper .nav-tabs .nav-item {
+body.upload .nav-tabs-wrapper .nav-tabs .nav-item {
   padding: 0;
 }
 
-main.upload .nav-tabs-wrapper .nav-tabs .nav-link {
+body.upload .nav-tabs-wrapper .nav-tabs .nav-link {
   -webkit-transform: scale(0.9);
           transform: scale(0.9);
   color: rgba(58, 67, 82, 0.4);
@@ -22,7 +22,7 @@ main.upload .nav-tabs-wrapper .nav-tabs .nav-link {
   margin-bottom: -1px !important;
 }
 
-main.upload .nav-tabs-wrapper .nav-tabs .nav-link:hover {
+body.upload .nav-tabs-wrapper .nav-tabs .nav-link:hover {
   -webkit-transform: scale(1);
           transform: scale(1);
   opacity: 1;
@@ -31,7 +31,7 @@ main.upload .nav-tabs-wrapper .nav-tabs .nav-link:hover {
   border-bottom-color: transparent;
 }
 
-main.upload .nav-tabs-wrapper .nav-tabs .nav-link.active {
+body.upload .nav-tabs-wrapper .nav-tabs .nav-link.active {
   margin-bottom: -1px !important;
   border-width: 2px;
   font-weight: 500;
@@ -42,7 +42,7 @@ main.upload .nav-tabs-wrapper .nav-tabs .nav-link.active {
           transform: scale(1);
 }
 
-main.upload .tab-content > .active {
+body.upload .tab-content > .active {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -50,24 +50,24 @@ main.upload .tab-content > .active {
       justify-content: space-around;
 }
 
-main.upload fieldset h5 {
+body.upload fieldset h5 {
   background: rgba(33, 20, 220, 0.2);
   border-radius: 3px;
 }
 
-main.upload .img-upload-thumbnail-wrapper {
+body.upload .img-upload-thumbnail-wrapper {
   -webkit-transition: 0.3s;
   transition: 0.3s;
 }
 
-main.upload .img-upload-thumbnail-wrapper .img-thumbnail {
+body.upload .img-upload-thumbnail-wrapper .img-thumbnail {
   width: 100%;
   border-width: 5px;
   border-radius: 5px;
   cursor: pointer;
 }
 
-main.upload .img-upload-thumbnail-wrapper .remove-img-btn {
+body.upload .img-upload-thumbnail-wrapper .remove-img-btn {
   position: absolute;
   font-size: 12px;
   font-weight: bolder;
@@ -83,43 +83,50 @@ main.upload .img-upload-thumbnail-wrapper .remove-img-btn {
   transition: 0.25s;
 }
 
-main.upload .img-upload-thumbnail-wrapper .remove-img-btn:hover {
+body.upload .img-upload-thumbnail-wrapper .remove-img-btn:hover {
   color: darkorange;
   border: 1px solid darkorange;
   background: white;
 }
 
-.modal .modal-header {
-  background: white;
-  position: relative;
-  z-index: 3;
+body.upload .modal .modal-content {
+  -webkit-box-shadow: 0 10px 50px rgba(0, 0, 0, 0.8);
+          box-shadow: 0 10px 50px rgba(0, 0, 0, 0.8);
 }
 
-.modal .img-count {
+body.upload .modal .modal-header {
+  background: white;
+  position: relative;
+  z-index: 13;
+}
+
+body.upload .modal .img-count {
   position: absolute;
   color: rgba(58, 67, 82, 0.5);
 }
 
-.modal .preview-img {
+body.upload .modal .preview-img {
   max-width: 80%;
   border: 10px solid red;
 }
 
-.modal a[class^=carousel-control-] {
+body.upload .modal a[class^=carousel-control-] {
   background: rgba(58, 67, 82, 0.1);
   width: 8%;
 }
 
-.modal a[class^=carousel-control-] span[class^=carousel-control-] {
-  background-color: rgba(58, 67, 82, 0.2);
-  border-radius: 50%;
-  height: 25px;
-  width: 25px;
+body.upload .modal a[class^=carousel-control-] span[class^=carousel-control-] {
+  font-size: 30px;
+  color: rgba(58, 67, 82, 0.6);
 }
 
-.modal .carousel-control-next,
-.modal .carousel-control-prev {
+body.upload .modal .carousel-control-next,
+body.upload .modal .carousel-control-prev {
   bottom: 10px;
   top: 10px;
+}
+
+body.upload .modal-backdrop.show {
+  opacity: 0.8;
 }
 /*# sourceMappingURL=upload.css.map */

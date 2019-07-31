@@ -1,15 +1,15 @@
-main.cars .cur-page-top-bg-image {
+body.cars .cur-page-top-bg-image {
   background: #e6e6e6;
   background-image: url("../images/main-bg.jpg");
   background-size: 50vh 50vh;
   color: #3a4352;
 }
 
-main.cars .text-section-desc-img {
+body.cars .text-section-desc-img {
   width: 300px;
 }
 
-main.cars .cars-list {
+body.cars .cars-list {
   list-style-type: none;
   margin: 0;
   padding: 0;
@@ -18,12 +18,12 @@ main.cars .cars-list {
   /* padding: 20px; */
 }
 
-main.cars .cars-list .card-wrapper {
+body.cars .cars-list .card-wrapper {
   padding: 20px;
   height: auto;
 }
 
-main.cars .cars-list .card-wrapper .custom-card {
+body.cars .cars-list .card-wrapper .custom-card {
   background: #f4f4f4;
   border-color: #f4f4f4;
   width: 100%;
@@ -32,32 +32,36 @@ main.cars .cars-list .card-wrapper .custom-card {
   transition: 0.3s;
 }
 
-main.cars .cars-list .card-wrapper .custom-card:hover {
+body.cars .cars-list .card-wrapper .custom-card:hover {
   background: #e0e0e0;
 }
 
-main.cars .cars-list .card-wrapper .custom-card .card-body * {
+body.cars .cars-list .card-wrapper .custom-card .card-body * {
   display: block;
   margin-bottom: 4px;
 }
 
-main.cars .cars-list .card-wrapper .custom-card .card-body span, main.cars .cars-list .card-wrapper .custom-card .card-body a {
+body.cars .cars-list .card-wrapper .custom-card .card-body span, body.cars .cars-list .card-wrapper .custom-card .card-body a {
   font-size: 85%;
 }
 
-main.cars .cars-list .card-wrapper .browse-cars-btn {
+body.cars .cars-list .card-wrapper .browse-cars-btn {
   visibility: hidden;
   opacity: 0;
   margin: 0;
   margin-top: 20px;
   width: 100%;
   padding: 12px;
+  -webkit-transform: scale(0.8);
+          transform: scale(0.8);
   -webkit-transition: 0.3s;
   transition: 0.3s;
 }
 
-main.cars .cars-list .card-wrapper:hover .browse-cars-btn {
+body.cars .cars-list .card-wrapper:hover .browse-cars-btn {
   visibility: visible;
   opacity: 1;
+  -webkit-transform: scale(1);
+          transform: scale(1);
 }
 /*# sourceMappingURL=cars.css.map */

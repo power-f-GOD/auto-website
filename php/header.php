@@ -2,20 +2,20 @@
   <!-- navbar section - START -->
   <nav class='navbar navbar-expand-sm nav-for-PCs'>
     <div class='container-fluid'>
-      <a class='navbar-brand align-self-center' href='index.html'>LOGO</a>
+      <a class='navbar-brand align-self-center' href='index'>LOGO</a>
       <div class='navbar-nav navbar-nav-ul-wrapper d-flex justify-content-end'>
         <ul class='navbar-nav navbar-nav-ul-1 d-flex justify-content-end'>
           <li class='nav-item'>
             <!-- home page link -->
-            <a class='nav-link' href='index.html'>Home</a>
+            <a class='nav-link' href='index'>Home</a>
           </li>
           <li class='nav-item'>
             <!-- about page link -->
-            <a class='nav-link' href='about.html'>About</a>
+            <a class='nav-link' href='shop'>Shop Cars</a>
           </li>
           <li class='nav-item'>
             <!-- contact page link -->
-            <a class='nav-link' href='contact.html'>Contact</a>
+            <a class='nav-link' href='upload'>Upload</a>
           </li>
           <!-- <li class='nav-item'>
             dashboard link
@@ -25,11 +25,11 @@
         <ul class='navbar-nav navbar-nav-ul-2 d-flex justify-content-end'>
           <li class='nav-item'>
             <!-- sign in page link -->
-            <a class='nav-link d-flex signin-link' href='signin.html'>Sign In</a>
+            <a class='nav-link d-flex signin-link' href='#!'>Sign In</a>
           </li>
           <li class='nav-item'>
             <!-- sign up page link -->
-            <a class='nav-link signup-link button' href='signup.html'>Sign Up</a>
+            <a class='nav-link signup-link button' href='#!'>Sign Up</a>
           </li>
         </ul>
       </div>

@@ -6,38 +6,44 @@
     { 
       padding: 0;
       background: rgba(255, 255, 255, 0.95);
-      // transition: 0.3s;
+      transition: background 0.3s, box-shadow 0.3s;
       box-shadow: 0 2px 30px $theme-color-light-2;
+
+      .navbar
+      {
+        padding: 0; 
+        padding-top: 15px; 
+        padding-bottom: 15px;
+        transition: 0.3s;
+
+        .navbar-brand
+        { 
+          color: $theme-color-basic;
+          /* text-shadow: 1px 1px 1px #111; */
+
+          &:hover
+          { color: black; }
+        }
+
+        .navbar-nav
+        {
+          .navbar-nav-ul-wrapper
+          { 
+            width: 100%;
+  
+            .navbar-nav-ul-1
+            {
+              margin-right: 7%;
+              width: 50%;
+            }
+        
+            .navbar-nav-ul-2
+            { width: auto; }
+          } 
+        }
+      }
     }
-
-    .navbar
-    { 
-      padding: 0; 
-      padding-top: 15px; 
-      padding-bottom: 15px;
-      transition: 0.3s;
-    }
- 
-    .navbar-brand
-    { 
-      color: $theme-color-basic;
-      /* text-shadow: 1px 1px 1px #111; */
-    }
-
-    .navbar-brand:hover
-    { color: black; }
-
-    .navbar-nav-ul-wrapper
-    { width: 100%; }
-
-    .navbar-nav-ul-1
-    {
-      margin-right: 7%;
-      width: 50%;
-    }
-
-    .navbar-nav-ul-2
-    { width: auto; }
+    
 
     .navbar-toggler
     {
@@ -50,12 +56,12 @@
       height: 45px;
       width: 45px;
       transition: 0.3s;
-    }
 
-    .navbar-toggler:hover
-    { 
-      background: rgb(230, 230,  230);
-      color: #232629 !important;
+      &:hover
+      { 
+        background: rgb(230, 230,  230);
+        color: #232629 !important;
+      }
     }
 
     .nav-link
@@ -66,16 +72,16 @@
       border-bottom: 2px solid transparent;
       /* text-shadow: 1px 1px 0px #111; */
       transition: 0.3s;
-    }
 
-    .nav-link:hover
-    {
-      border-bottom-color: $theme-color-basic;
-      color: $theme-color-basic;
+      &:hover
+      {
+        border-bottom-color: $theme-color-basic;
+        color: $theme-color-basic;
+      }
     }
 
     .navbar-collapse .nav-link
-    { 
+    {
       margin-bottom: 10px !important; 
       text-align: center;
       border-radius: 50px;
@@ -96,14 +102,14 @@
       background: $theme-color-basic;
       color: white;
       width: 100% !important; 
-      border: 1px solid $theme-color-basic !important; 
-    }
-
-    .signup-link:hover
-    { 
-      background: inherit !important;
-      color: $theme-color-basic !important;
-      box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+      border: 1px solid $theme-color-basic !important;
+      
+      &:hover
+      {
+        background: inherit !important;
+        color: $theme-color-basic !important;
+        box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+      }
     }
 
     .get-started-button

@@ -1,5 +1,17 @@
 
-window.addEventListener('DOMContentLoaded', function()
+function loadIndexPageScript()
 {
+  let navWrapper = Q('.nav-wrapper');
   
-});
+  navWrapper.classList.add('transparent');
+
+  window.onscroll = () =>
+  {
+    let scrollPos = window.scrollY || window.pageYOffset;
+
+    if (scrollPos > Q('#index-page-carousel').offsetHeight - 70)
+      navWrapper.classList.remove('transparent');
+    else
+      navWrapper.classList.add('transparent');
+  }
+}

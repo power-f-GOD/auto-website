@@ -12,8 +12,10 @@
   <link rel="stylesheet" type='text/css' href="font-awesome/css/fa.min.css" />
   <link rel='stylesheet' type='text/css' href='css/main.css' />
   <link rel='stylesheet' type='text/css' href='css/header_footer.css' />
+  <link rel='stylesheet' type='text/css' href='css/index.css' />
   <link rel='stylesheet' type='text/css' href='css/cars.css' />
   <link rel='stylesheet' type='text/css' href='css/upload.css' />
+  <link rel='stylesheet' type='text/css' href='css/shop.css' />
   <link rel='stylesheet' type='text/css' href='css/responsive.css' />
   <!-- <script src='https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js'></script> -->
   <!-- <script src='https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js'></script> -->
@@ -25,4 +27,5 @@
   <script type='text/javascript' src='built/js/index.js' defer></script>
   <script type='text/javascript' src='built/js/cars.js' defer></script>
   <script type='text/javascript' src='built/js/upload.js' defer></script>
+  <script type='text/javascript' src='built/js/shop.js' defer></script>
 </head>

@@ -1,0 +1,63 @@
+@import 'theme_colors.scss';
+
+body.shop
+{
+  .no-shadow
+  { box-shadow: none; }
+
+  .cur-page-top-bg-image
+  {
+    background-color: rgba(230, 230,  230, 0.5);
+    background-image: url('../images/shop_cars_logo_bg.png'); 
+    background-size: cover;
+    color: $theme-text-color-basic;
+    height: 150px;
+
+    .cur-page-top-bg-image-label
+    { background: rgba(255, 255,  255, 0.1); }
+  }
+
+  .car-company-link
+  {
+    color: $theme-text-color-basic;
+    font-weight: 500;
+    text-decoration: none;
+    padding: 0;
+
+    .card
+    {
+      height: 180px;
+      padding: 15px;
+      border: none;
+      
+      
+      .card-body
+      {
+        border-radius: 3px;
+        border: 1px solid $theme-text-color-light-3;
+        transition: 0.3s;
+      }
+      
+      .car-company-logo
+      {
+        width: 70px;
+        height: auto;
+        margin-bottom: 10px;
+      }
+    }
+
+    &:hover .card-body
+    {
+      color: $theme-color-light-9;
+      border-color: $theme-color-light-2;
+      margin: 5px 0;
+      background: $theme-color-light-1;
+    }
+  }
+
+  
+
+  .text-section-desc-img
+  { width: 300px; }
+}
+

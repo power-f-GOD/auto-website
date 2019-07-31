@@ -40,7 +40,7 @@ main .sub-main {
 main .cur-page-top-bg-image {
   min-width: auto;
   color: #e6e6e6;
-  height: 400px;
+  height: 270px;
   background-size: cover;
   background-repeat: no-repeat;
   overflow: hidden;
@@ -72,6 +72,10 @@ a:hover {
 
 a .btn-primary {
   color: white !important;
+}
+
+a[class^=carousel-control-] {
+  z-index: 11;
 }
 
 fieldset {

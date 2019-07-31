@@ -2,11 +2,15 @@
 .nav-wrapper {
   padding: 0;
   background: rgba(255, 255, 255, 0.95);
+  -webkit-transition: background 0.3s, -webkit-box-shadow 0.3s;
+  transition: background 0.3s, -webkit-box-shadow 0.3s;
+  transition: background 0.3s, box-shadow 0.3s;
+  transition: background 0.3s, box-shadow 0.3s, -webkit-box-shadow 0.3s;
   -webkit-box-shadow: 0 2px 30px rgba(33, 20, 220, 0.2);
           box-shadow: 0 2px 30px rgba(33, 20, 220, 0.2);
 }
 
-.navbar {
+.nav-wrapper .navbar {
   padding: 0;
   padding-top: 15px;
   padding-bottom: 15px;
@@ -14,25 +18,25 @@
   transition: 0.3s;
 }
 
-.navbar-brand {
+.nav-wrapper .navbar .navbar-brand {
   color: #2114dc;
   /* text-shadow: 1px 1px 1px #111; */
 }
 
-.navbar-brand:hover {
+.nav-wrapper .navbar .navbar-brand:hover {
   color: black;
 }
 
-.navbar-nav-ul-wrapper {
+.nav-wrapper .navbar .navbar-nav .navbar-nav-ul-wrapper {
   width: 100%;
 }
 
-.navbar-nav-ul-1 {
+.nav-wrapper .navbar .navbar-nav .navbar-nav-ul-wrapper .navbar-nav-ul-1 {
   margin-right: 7%;
   width: 50%;
 }
 
-.navbar-nav-ul-2 {
+.nav-wrapper .navbar .navbar-nav .navbar-nav-ul-wrapper .navbar-nav-ul-2 {
   width: auto;
 }
 

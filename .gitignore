@@ -6,9 +6,9 @@
 # .pnp.js
 
 #css
-/bootstrap
-/font-awesome
-/images
+# /bootstrap
+# /font-awesome
+# /images
 
 # testing
 # /coverage

@@ -1,17 +1,19 @@
-interface Upload
-{
-  imageFiles: File[],
-  imageNames: string[]
-}
-
 
 function loadUploadPageScript()
 {
-  const newUploads: Upload = {
+  interface Upload
+  {
+    imageFiles: File[],
+    imageNames: string[]
+  }
+
+  const newUploads: Upload = 
+        {
           imageFiles: [],
           imageNames: []
         },
-        oldUploads: Upload = {
+        oldUploads: Upload = 
+        {
           imageFiles: [],
           imageNames: []
         };

@@ -4,8 +4,18 @@
 //   $('[data-toggle="popover"]').popover(); 
 // });
 window.addEventListener('DOMContentLoaded', function () {
-    if (window.location.href.match(/\/cars(\.php)?/))
+    var href = window.location.href, hrefs = {
+        idx: /\/(index(\.php)?)|\/(|#.*)$/,
+        crs: /\/cars(\.php)?/,
+        upl: /\/upload(\.php)?/,
+        shp: /\/shop(\.php)?/
+    };
+    if (href.match(hrefs.idx))
+        loadIndexPageScript();
+    else if (href.match(hrefs.crs))
         loadCarsPageScript();
-    else if (window.location.href.match(/\/upload(\.php)?/))
+    else if (href.match(hrefs.upl))
         loadUploadPageScript();
+    else if (href.match(hrefs.shp))
+        loadShopPageScript();
 });

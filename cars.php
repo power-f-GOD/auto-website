@@ -4,7 +4,7 @@
     require 'php/head.php';
   ?>
 
-  <body>
+  <body class="cars">
     <?php 
       require 'php/header.php';
     ?>
@@ -38,6 +38,6 @@
       require 'php/footer.php';
     ?>
 
-    <div class="fixed-top h-100 w-100 dark-bg-overlay hide"></div>
+    <div class="fixed-top h-100 w-100 dark-bg-overlay custom-hide"></div>
   </body>
 </html>

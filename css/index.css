@@ -1,16 +1,85 @@
-.cur-page-top-bg-image {
-  height: 400px;
+body.index .nav-wrapper.transparent {
+  background: transparent;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+body.index .nav-wrapper.transparent .navbar .navbar-brand {
+  color: #ccc;
+}
+
+body.index .nav-wrapper.transparent .navbar .navbar-brand:hover {
+  color: white;
+}
+
+body.index .nav-wrapper.transparent .navbar .nav-link {
+  font-size: 14px;
+  min-width: auto;
+  color: #999;
+  border-bottom: 2px solid transparent;
+  /* text-shadow: 1px 1px 0px #111; */
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+body.index .nav-wrapper.transparent .navbar .nav-link:hover {
+  border-bottom-color: white;
+  color: white;
+}
+
+body.index .nav-wrapper.transparent .navbar .signup-link {
+  background: #2114dc;
+  color: white;
+  width: 100% !important;
+  border: 1px solid transparent;
+}
+
+body.index .nav-wrapper.transparent .navbar .signup-link:hover {
+  border-color: white !important;
+  background: transparent !important;
+  color: white !important;
+  -webkit-box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+          box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+}
+
+body.index .carousel-item .carousel-img {
+  height: 100vh;
+  max-height: 450px;
+  background-image: url("./images/cars/stinger.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+body.index .carousel-item .carousel-caption {
+  right: 0;
+  bottom: 0;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  -webkit-transition: color 1s;
+  transition: color 1s;
+  color: transparent;
+  background: rgba(0, 0, 0, 0.75);
+}
+
+body.index .carousel-item.active .carousel-caption {
+  color: #ddd;
+}
+
+body.index .cur-page-top-bg-image {
   background: #e6e6e6;
   background-image: url("../images/main-bg.jpg");
   background-size: 50vh 50vh;
-  color: #5a6372;
+  color: #3a4352;
 }
 
-.text-section-desc-img {
+body.index .text-section-desc-img {
   width: 300px;
 }
 
-.cars-list {
+body.index .cars-list {
   list-style-type: none;
   margin: 0;
   padding: 0;
@@ -19,12 +88,12 @@
   /* padding: 20px; */
 }
 
-.card-wrapper {
+body.index .cars-list .card-wrapper {
   padding: 20px;
   height: auto;
 }
 
-.custom-card {
+body.index .cars-list .card-wrapper .custom-card {
   background: #f4f4f4;
   border-color: #f4f4f4;
   width: 100%;
@@ -33,26 +102,20 @@
   transition: 0.3s;
 }
 
-.custom-card:hover {
+body.index .cars-list .card-wrapper .custom-card:hover {
   background: #e0e0e0;
 }
 
-.card-body * {
+body.index .cars-list .card-wrapper .custom-card .card-body * {
   display: block;
   margin-bottom: 4px;
 }
 
-.card-body span,
-.card-body a {
+body.index .cars-list .card-wrapper .custom-card .card-body span, body.index .cars-list .card-wrapper .custom-card .card-body a {
   font-size: 85%;
 }
 
-/* .car-image
-    {
-      margin: 10px;
-      width: 100%;
-    } */
-.browse-cars-btn {
+body.index .cars-list .card-wrapper .browse-cars-btn {
   visibility: hidden;
   opacity: 0;
   margin: 0;
@@ -63,7 +126,7 @@
   transition: 0.3s;
 }
 
-.card-wrapper:hover .browse-cars-btn {
+body.index .cars-list .card-wrapper:hover .browse-cars-btn {
   visibility: visible;
   opacity: 1;
 }

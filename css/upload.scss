@@ -1,7 +1,7 @@
 @import 'theme_colors.scss';
 
 
-main.upload
+body.upload
 {
   .nav-tabs-wrapper
   {
@@ -98,45 +98,51 @@ main.upload
       }
     }
   }
-}
 
-
-.modal
-{
-  .modal-header
+  .modal
   {
-    background: white;
-    position: relative;
-    z-index: 3;
-  }
-
-  .img-count
-  { position: absolute; color: $theme-text-color-light-5; }
-
-  .preview-img
-  {
-    max-width: 80%;
-    border: 10px solid red;
-  }
-
-  a[class^=carousel-control-]
-  {
-    background: $theme-text-color-light-1;
-    width: 8%;
-
-    span[class^=carousel-control-]
+    .modal-content {
+      box-shadow: 0 10px 50px rgba(0, 0, 0, 0.8);
+    }
+  
+    .modal-header
     {
-      background-color: $theme-text-color-light-2;
-      border-radius: 50%;
-      height: 25px;
-      width: 25px;
+      background: white;
+      position: relative;
+      z-index: 13;
+    }
+    
+    .img-count
+    { position: absolute; color: $theme-text-color-light-5; }
+  
+    .preview-img
+    {
+      max-width: 80%;
+      border: 10px solid red;
+    }
+  
+    a[class^=carousel-control-]
+    {
+      background: $theme-text-color-light-1;
+      width: 8%;
+  
+      span[class^=carousel-control-]
+      {
+        font-size: 30px;
+        color: $theme-text-color-light-6;
+      }
+    }
+  
+    .carousel-control-next,
+    .carousel-control-prev
+    { 
+      bottom: 10px;
+      top: 10px;
     }
   }
-
-  .carousel-control-next,
-  .carousel-control-prev
-  { 
-    bottom: 10px;
-    top: 10px;
-  }
+  
+  .modal-backdrop.show
+  { opacity: 0.8; }
 }
+
+
