@@ -7,16 +7,7 @@
   <body class='shop'>
     <?php
       require 'php/header.php';
-  
-      $logo_names = scandir('./images/cars_logo/');
-      $companies = [];
-
-      foreach ($logo_names as $logo_name)
-      {
-        $company = substr($logo_name, 0, strpos($logo_name, '_'));
-        $company = (preg_match("/bmw|fiat|gmc|infiniti|mini/", $company) ? strtoupper($company) : ucfirst($company));
-        array_push($companies, [$logo_name, $company]);
-      }
+      require 'php/logo_data.php';
     ?>
 
     <main>
@@ -40,15 +31,15 @@
             <?php
               foreach ($companies as $company)
                 if (!preg_match("/\.$/", $company[0]))
-                echo "
-                  <a href='#!' class='car-company-link d-inline-flex w-auto col-sm-4 col-md-3 col-lg-2'>
-                    <div class='card w-100 css-debug-border'>
-                      <div class='card-body d-flex flex-column justify-content-between align-items-center'>
-                        <img src='./images/cars_logo/$company[0]' class='car-company-logo' />
-                        <span class='card-subtitle'>$company[1]</span>
+                  echo "
+                    <a href='cars' class='car-company-link d-inline-flex w-auto col-sm-4 col-md-3 col-lg-2'>
+                      <div class='card w-100 css-debug-border'>
+                        <div class='card-body d-flex flex-column justify-content-between align-items-center'>
+                          <img src='./images/cars_logo/$company[0]' class='car-company-logo' />
+                          <span class='card-subtitle'>$company[1]</span>
+                        </div>
                       </div>
-                    </div>
-                  </a>";
+                    </a>";
             ?>
           </div>
         </div>

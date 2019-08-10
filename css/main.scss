@@ -101,7 +101,7 @@ form
   .form-group
   { 
     margin-bottom: 0;
-    margin-top: 10px;
+    margin-top: 20px;
 
     input,
     textarea
@@ -193,6 +193,9 @@ form
 
 .css-debug-border
 { border: 1px solid grey; }
+
+.grayscale
+{ filter: grayscale(1); }
 
 
 /* for paddings - STAT */

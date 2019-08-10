@@ -1,5 +1,6 @@
 "use strict";
 function loadUploadPageScript() {
+    document.title = 'Upload Cars | Auto-Web';
     var newUploads = {
         imageFiles: [],
         imageNames: []

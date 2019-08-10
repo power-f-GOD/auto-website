@@ -1,6 +1,8 @@
 
 function loadCarsPageScript()
 {
+  document.title = 'Cars | Auto-Web';
+
   const cars = 
   {
     families: [

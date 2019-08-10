@@ -6,8 +6,8 @@
   transition: background 0.3s, -webkit-box-shadow 0.3s;
   transition: background 0.3s, box-shadow 0.3s;
   transition: background 0.3s, box-shadow 0.3s, -webkit-box-shadow 0.3s;
-  -webkit-box-shadow: 0 2px 30px rgba(33, 20, 220, 0.2);
-          box-shadow: 0 2px 30px rgba(33, 20, 220, 0.2);
+  -webkit-box-shadow: 0 10px 40px rgba(58, 67, 82, 0.2);
+          box-shadow: 0 10px 40px rgba(58, 67, 82, 0.2);
 }
 
 .nav-wrapper .navbar {

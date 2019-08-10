@@ -2,6 +2,8 @@
 function loadIndexPageScript()
 {
   let navWrapper = Q('.nav-wrapper');
+
+  document.title = 'Home | Auto-Web';
   
   navWrapper.classList.add('transparent');
 

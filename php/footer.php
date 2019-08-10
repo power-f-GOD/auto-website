@@ -45,18 +45,18 @@
   </div>
   <!-- sub-footer - START -->
   <div>
-    <div class='container-fluid d-flex flex-wrap justify-content-between'>
+    <div class='container-fluid d-flex flex-wrap justify-content-between pad-y-30px'>
       <section class='d-flex justify-content-between align-items-center'>
-        <a href='#!' class='d-flex align-items-center justify-content-center soc-icon'>
+        <a href='#!' class='d-flex align-items-center justify-content-center soc-icon' onclick="alert('Link currently inactive. Page not currently available.');">
           <i class="fa fa-facebook"></i>
         </a>
-        <a href='#!' class='d-flex align-items-center justify-content-center soc-icon'>
+        <a href='#!' class='d-flex align-items-center justify-content-center soc-icon' onclick="alert('Link currently inactive. Page not currently available.');">
           <i class="fa fa-twitter"></i>
         </a>
-        <a href='#!' class='d-flex align-items-center justify-content-center soc-icon'>
+        <a href='#!' class='d-flex align-items-center justify-content-center soc-icon' onclick="alert('Link currently inactive. Page not currently available.');">
           <i class="fa fa-google"></i>
         </a>
-        <a href='#!' class='d-flex align-items-center justify-content-center soc-icon'>
+        <a href='#!' class='d-flex align-items-center justify-content-center soc-icon' onclick="alert('Link currently inactive. Page not currently available.');">
           <i class="fa fa-whatsapp"></i>
         </a>|
         <a href="tel:+2348105506514 ">+2348105506514</a> 

@@ -1,5 +1,6 @@
 "use strict";
 function loadCarsPageScript() {
+    document.title = 'Cars | Auto-Web';
     var cars = {
         families: [
             {

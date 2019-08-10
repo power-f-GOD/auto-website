@@ -25,11 +25,11 @@
         <ul class='navbar-nav navbar-nav-ul-2 d-flex justify-content-end'>
           <li class='nav-item'>
             <!-- sign in page link -->
-            <a class='nav-link d-flex signin-link' href='#!'>Sign In</a>
+            <a class='nav-link d-flex signin-link' href='#!' onclick="alert('Link currently inactive. Page not currently available.');">Sign In</a>
           </li>
           <li class='nav-item'>
             <!-- sign up page link -->
-            <a class='nav-link signup-link button' href='#!'>Sign Up</a>
+            <a class='nav-link signup-link button' href='#!' onclick="alert('Link currently inactive. Page not currently available.');">Sign Up</a>
           </li>
         </ul>
       </div>

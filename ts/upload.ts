@@ -1,6 +1,8 @@
 
 function loadUploadPageScript()
 {
+  document.title = 'Upload Cars | Auto-Web';
+
   interface Upload
   {
     imageFiles: File[],

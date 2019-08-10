@@ -44,7 +44,7 @@ body.index .nav-wrapper.transparent .navbar .signup-link:hover {
 
 body.index .carousel-item .carousel-img {
   height: 100vh;
-  max-height: 450px;
+  max-height: 500px;
   background-image: url("./images/cars/stinger.jpg");
   background-size: cover;
   background-repeat: no-repeat;
@@ -61,11 +61,36 @@ body.index .carousel-item .carousel-caption {
   -webkit-transition: color 1s;
   transition: color 1s;
   color: transparent;
-  background: rgba(0, 0, 0, 0.75);
+  background: rgba(0, 0, 0, 0.85);
+}
+
+body.index .carousel-item .carousel-caption .carousel-link-btn {
+  max-width: 200px;
+  padding: 10px 35px;
+  background: transparent;
+  border: 2px solid white;
+  color: white;
+  margin-top: 30px;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+}
+
+body.index .carousel-item .carousel-caption .carousel-link-btn:hover {
+  background: #2114dc;
 }
 
 body.index .carousel-item.active .carousel-caption {
   color: #ddd;
+}
+
+body.index ul.featured-cars-logo-wrapper {
+  opacity: 0.8;
+  list-style-type: none;
+}
+
+body.index ul.featured-cars-logo-wrapper li {
+  width: auto;
 }
 
 body.index .cur-page-top-bg-image {
